@@ -66,6 +66,33 @@ You can collect the test results with
 sh bin/util/find_all_json_test_scores.sh exp_out > all_test_scores.json
 ```
 
+## Dataset Format ##
+
+# Training is done by a ranking loss computed over triples of `<source string, true positive, true negative>`. These three aliases are tab separated and each example is on its own line.
+
+```
+William Paget, 1st Baron Paget  William Lord Paget      William George Stevens 
+William Paget, 1st Baron Paget  William Lord Paget      William Tighe  
+William Paget, 1st Baron Paget  William Lord Paget      Edward Paget   
+William Paget, 1st Baron Paget  William Lord Paget      The Earl of Uxbridge   
+William Paget, 1st Baron Paget  William Lord Paget      East Francia   
+William Paget, 1st Baron Paget  William Lord Paget      Irish  
+```
+
+# Test performance is evaluated by IR metrics such as MAP / Hits at K. The format is `<source string, candidate string, label (1 if candidate string is alias of source string and 0 if it is not)>`. These are also tab separated.
+
+```
+peace agreement peace negotiation       1      
+peace agreement interim peace treaty    1      
+peace agreement Peace Accord    1      
+peace agreement peace treaty    1      
+peace agreement Peace and Truce 0      
+peace agreement Treaty of Apamea        0      
+peace agreement Peace and conflict studies      0      
+peace agreement peace-keepers   0
+```
+
+
 ## Datasets ##
 
 Please contact us for the datasets. Links to come soon.
