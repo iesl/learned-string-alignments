@@ -68,7 +68,7 @@ sh bin/util/find_all_json_test_scores.sh exp_out > all_test_scores.json
 
 ## Dataset Format ##
 
-# Training is done by a ranking loss computed over triples of `<source string, true positive, true negative>`. These three aliases are tab separated and each example is on its own line.
+Training is done by a ranking loss computed over triples of `<source string, true positive, true negative>`. These three aliases are tab separated and each example is on its own line.
 
 ```
 William Paget, 1st Baron Paget  William Lord Paget      William George Stevens 
@@ -79,7 +79,7 @@ William Paget, 1st Baron Paget  William Lord Paget      East Francia
 William Paget, 1st Baron Paget  William Lord Paget      Irish  
 ```
 
-# Test performance is evaluated by IR metrics such as MAP / Hits at K. The format is `<source string, candidate string, label (1 if candidate string is alias of source string and 0 if it is not)>`. These are also tab separated.
+Test performance is evaluated by IR metrics such as MAP / Hits at K. The format is `<source string, candidate string, label (1 if candidate string is alias of source string and 0 if it is not)>`. These are also tab separated.
 
 ```
 peace agreement peace negotiation       1      
