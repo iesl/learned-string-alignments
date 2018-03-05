@@ -1,4 +1,4 @@
-# Learning Vector Representations for Entity Aliases #
+# Learning String Alignments for Entity Aliases #
 
 Paper can be found here: http://www.akbc.ws/2017/papers/28_paper.pdf
 
