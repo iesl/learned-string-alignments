@@ -16,7 +16,7 @@ In each shell session run, `source bin/setup.sh` to set environment variables.
 
 ## Training Models ##
 
-To train a model, first create a config JSON file (sample file for AlignCNN at `config/wiki/align_cnn_wiki.sh`).
+To train a model, first create a config JSON file (sample file for AlignCNN at `config/wiki/align_cnn_wiki.json`).
 
 Then, you can run the `bin/train/train.sh` script with the config as an argument to train the model. 
 Wrapper training scripts for the models are:
